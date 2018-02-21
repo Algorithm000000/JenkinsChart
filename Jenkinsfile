@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'python runtest.py'
+                sh 'python --version'
             }
         }
     }
