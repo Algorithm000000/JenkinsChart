@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                python runtest.py
+                bat 'set'
             }
         }
     }
