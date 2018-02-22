@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Building..'
-				sh 'python -u runtest.py'
+				Cygwin 'python -u runtest.py'
             }
         }
 		
