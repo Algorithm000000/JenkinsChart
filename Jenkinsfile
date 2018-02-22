@@ -1,10 +1,24 @@
+Jenkinsfile(Declarrative Pipeline)
 pipeline {
     agent any
+	
     stages {
         stage('build') {
             steps {
-                bat 'set'
+                echo 'Building..'
             }
         }
+		
+		stage('Test') {
+			steps {
+				echo 'Testing..'
+			}
+		}
+		
+		stage('Deploy') {
+			steps {
+				echo 'Deploying..'
+			}
+		}
     }
 }
