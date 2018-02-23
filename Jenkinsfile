@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Building..'
-				Cygwin 'python -u runtest.py'
+				bat 'python -u CreateChart.py'
             }
         }
 		
